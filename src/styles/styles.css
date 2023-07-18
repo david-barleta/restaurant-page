@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bilbo&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --text-color: white;
+}
+
+/* HOME WEB PAGE */
+
+body {
+  color: var(--text-color);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr 1fr 2fr;
+  column-gap: 50px;
+  padding: 20px;
+  justify-self: center;
+}
+
+.header > div {
+  font-family: "Bilbo";
+  font-size: 2.5rem;
+}
+
+.header button {
+  background: none;
+  border: none;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.25rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+#hero-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../assets/bg-img1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 60%;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  row-gap: 35px;
+}
+
+#hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  row-gap: 50px;
+  padding-right: 200px;
+  padding-left: 200px;
+  font-family: "Libre Baskerville," serif;
+  font-size: 1.75rem;
+}
+
+#hero-content > div {
+  font-family: 'Bilbo';
+  font-size: 7rem;
+}
+
+#menu-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../assets/bg-img2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 30%;
+  padding-right: 200px;
+  padding-left: 200px;
+  font-family: "Libre Baskerville," serif;
+  font-size: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
+
+#cta-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../assets/bg-img3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 50%;
+  padding-right: 200px;
+  padding-left: 200px;
+  font-family: "Libre Baskerville," serif;
+  font-size: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 50px;
+}
+
+#cta-section > button {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
