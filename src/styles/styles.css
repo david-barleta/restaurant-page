@@ -102,3 +102,48 @@ body {
   color: var(--text-color);
   cursor: pointer;
 }
+
+/* MENU WEB PAGE */
+
+#menu {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../assets/bg-img2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 35%;
+}
+
+#menu-items {
+  display: grid;
+  grid-template-rows: auto auto;
+  row-gap: 25px;
+}
+
+.menu-category {
+  font-family: "Bilbo";
+  font-size: 4rem;
+  text-align: center;
+}
+
+#coffee-items {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(3, auto);
+  align-items: center;
+  justify-content: center;
+  column-gap: 75px;
+  row-gap: 40px;
+}
+
+.coffee-item {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.coffee-item img {
+  width: 125px;
+}
