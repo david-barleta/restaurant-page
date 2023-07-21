@@ -10,7 +10,7 @@ body {
   color: var(--text-color);
 }
 
-.header {
+header {
   display: grid;
   grid-template-columns: 1fr 4fr 1fr 1fr 1fr 2fr;
   column-gap: 50px;
@@ -18,12 +18,12 @@ body {
   justify-self: center;
 }
 
-.header > div {
+header > div {
   font-family: "Bilbo";
   font-size: 2.5rem;
 }
 
-.header button {
+header button {
   background: none;
   border: none;
   font-family: "Libre Baskerville", serif;
