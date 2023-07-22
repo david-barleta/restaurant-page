@@ -1,6 +1,6 @@
 export default function loadHomePage() {
   const homeDiv = document.createElement('div');
-  homeDiv.id = 'home';
+  homeDiv.id = 'home-page';
 
   const heroSection = document.createElement('div');
   heroSection.id = 'hero-section';
@@ -14,17 +14,20 @@ export default function loadHomePage() {
 
   const homeBtn = document.createElement('button');
   homeBtn.type = 'button';
-  homeBtn.id = 'home-button';
+  homeBtn.classList.add('tab-button');
+  homeBtn.id = 'home';
   homeBtn.textContent = 'Home';
 
   const menuBtn = document.createElement('button');
   menuBtn.type = 'button';
-  menuBtn.id = 'menu-button';
+  menuBtn.classList.add('tab-button');
+  menuBtn.id = 'menu';
   menuBtn.textContent = 'Menu';
 
   const contactBtn = document.createElement('button');
   contactBtn.type = 'button';
-  contactBtn.id = 'contact-button';
+  contactBtn.classList.add('tab-button');
+  contactBtn.id = 'contact';
   contactBtn.textContent = 'Contact';
 
   header.append(emptyDiv, headerLogo, homeBtn, menuBtn, contactBtn)
