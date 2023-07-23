@@ -15,19 +15,19 @@ export default function loadHomePage() {
   const homeBtn = document.createElement('button');
   homeBtn.type = 'button';
   homeBtn.classList.add('tab-button');
-  homeBtn.id = 'home';
+  homeBtn.setAttribute('data-page', 'home');
   homeBtn.textContent = 'Home';
 
   const menuBtn = document.createElement('button');
   menuBtn.type = 'button';
   menuBtn.classList.add('tab-button');
-  menuBtn.id = 'menu';
+  menuBtn.setAttribute('data-page', 'menu');
   menuBtn.textContent = 'Menu';
 
   const contactBtn = document.createElement('button');
   contactBtn.type = 'button';
   contactBtn.classList.add('tab-button');
-  contactBtn.id = 'contact';
+  contactBtn.setAttribute('data-page', 'contact');
   contactBtn.textContent = 'Contact';
 
   header.append(emptyDiv, headerLogo, homeBtn, menuBtn, contactBtn)
@@ -61,6 +61,8 @@ export default function loadHomePage() {
 
   const ctaBtn = document.createElement('button');
   ctaBtn.type = 'button';
+  ctaBtn.classList.add('tab-button');
+  ctaBtn.setAttribute('data-page', 'menu');
   ctaBtn.textContent = 'View our menu.'
 
   ctaSection.append(cta, ctaBtn);

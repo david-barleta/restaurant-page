@@ -63,7 +63,7 @@ function loadNewPage(page) {
 }
 
 function handleTabClick(event) {
-  const selectedPage = event.target.id;
+  const selectedPage = event.target.dataset.page;
 
   clearCurrentPage();
   loadNewPage(selectedPage);
