@@ -1,5 +1,6 @@
 import loadHomePage from './home.js';
 import loadMenuPage from './menu.js';
+import loadContactPage from './contact.js';
 
 // function clearCurrentPage() {
 //   const content = document.querySelector('#content');
@@ -7,20 +8,37 @@ import loadMenuPage from './menu.js';
 // }
 
 // function bindHeaderBtns() {
-//   const homeBtn = document.querySelector('#home-button');
-//   const menuBtn = document.querySelector('#menu-button');
-//   const contactBtn = document.querySelector('#contact-button');
+//   const homeBtn = document.querySelector('#home');
+//   const menuBtn = document.querySelector('#menu');
+//   const contactBtn = document.querySelector('#contact');
 
-//   homeBtn.addEventListener('click', clearCurrentPage);
-//   homeBtn.addEventListener('click', loadHomePage);
+//   homeBtn.addEventListener('click', handleHomeClick);
+//   menuBtn.addEventListener('click', handleMenuClick);
+// }
 
+// function handleHomeClick() {
+//   clearCurrentPage();
+//   loadHomePage();
+//   bindHeaderBtns();
+// }
 
-//   menuBtn.addEventListener('click', clearCurrentPage);
-//   menuBtn.addEventListener('click', loadMenuPage);
+// function handleMenuClick() {
+//   clearCurrentPage();
+//   loadMenuPage();
+//   bindHeaderBtns();
 // }
 
 // loadHomePage();
 // bindHeaderBtns();
+
+// Previous code above
+// What I did wrong:
+// - All the functions related to tabbed browsing are called inside the
+// bind buttons function
+// - Because of this, the bind buttons will have to be called inside itself
+// - as well
+// - There should be a separate function that handles the click wherein
+// - all the necessary functions will be called inside here instead
 
 function clearCurrentPage() {
   const pageContent = document.querySelector('#content');
@@ -35,6 +53,9 @@ function loadNewPage(page) {
       break;
     case 'menu':
       loadMenuPage();
+      break;
+    case 'contact':
+      loadContactPage();
       break;
   }
 
